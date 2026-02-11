@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #ff5900; /* Arancione Babbel */
+    --text-color: #333;
+    --bg-color: #fdfdfd;
+    --accent-color: #00457c; /* Blu scuro professionale */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: white;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+h1, h2 { color: var(--accent-color); }
+
+.article-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+footer a:hover { text-decoration: underline; }
