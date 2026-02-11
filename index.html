@@ -2,41 +2,181 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Babbel Culture Hub | Parole Intraducibili</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .article-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        .flag {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .btn-read {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .intro-text {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Oltre le Parole 🌍</h1>
-        <p>Esplora l'anima delle nazioni attraverso il loro vocabolario unico.</p>
+        <p>Il dizionario delle culture del mondo by <strong>Babbel</strong></p>
     </header>
 
     <div class="container">
-        <section class="grid">
+        <p class="intro-text">
+            Esistono emozioni che non hanno traduzione, ma hanno una casa. 
+            Esplora la nostra collezione di parole intraducibili e scopri come ogni lingua vede il mondo in modo unico.
+        </p>
+
+        <div class="grid">
             <div class="article-card">
-                <h2>🇫🇷 Francia</h2>
-                <p>Dal <em>Flâneur</em> all'<em>Esprit de l'escalier</em>. Scopri perché il francese è la lingua del sentimento.</p>
-                <a href="fr-intraducibili.html">Leggi l'articolo &rarr;</a>
+                <div>
+                    <span class="flag">🇫🇷</span>
+                    <h2>Francese</h2>
+                    <p>Dall'eleganza del <em>Flâneur</em> al rimpianto dell'<em>Esprit de l'escalier</em>.</p>
+                </div>
+                <a href="fr-intraducibili.html" class="btn-read">Esplora &rarr;</a>
             </div>
 
             <div class="article-card">
-                <h2>🇪🇸 Spagna</h2>
-                <p>La <em>Sobremesa</em> e il piacere di vivere. Scopri come gli spagnoli descrivono il mondo.</p>
-                <a href="es-intraducibili.html">Leggi l'articolo &rarr;</a>
+                <div>
+                    <span class="flag">🇪🇸</span>
+                    <h2>Spagnolo</h2>
+                    <p>La magia della <em>Sobremesa</em> e l'entusiasmo di <em>Estrenar</em>.</p>
+                </div>
+                <a href="es-intraducibili.html" class="btn-read">Esplora &rarr;</a>
             </div>
 
             <div class="article-card">
-                <h2>🇩🇪 Germania</h2>
-                <p>La precisione emotiva: dalla <em>Schadenfreude</em> al <em>Fernweh</em>.</p>
-                <a href="de-intraducibili.html">Leggi l'articolo &rarr;</a>
+                <div>
+                    <span class="flag">🇩🇪</span>
+                    <h2>Tedesco</h2>
+                    <p>La profondità di <em>Fernweh</em> e il paradosso di <em>Schadenfreude</em>.</p>
+                </div>
+                <a href="de-intraducibili.html" class="btn-read">Esplora &rarr;</a>
             </div>
-        </section>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇬🇧</span>
+                    <h2>Inglese</h2>
+                    <p>Dalla fortuna della <em>Serendipity</em> al profumo del <em>Petrichor</em>.</p>
+                </div>
+                <a href="en-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇵🇹</span>
+                    <h2>Portoghese</h2>
+                    <p>L'anima della <em>Saudade</em> e la tenerezza del <em>Cafuné</em>.</p>
+                </div>
+                <a href="pt-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇸🇪</span>
+                    <h2>Svedese</h2>
+                    <p>L'equilibrio del <em>Lagom</em> e il rito sociale della <em>Fika</em>.</p>
+                </div>
+                <a href="sv-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇳🇴</span>
+                    <h2>Norvegese</h2>
+                    <p>La vita nel <em>Friluftsliv</em> e il calore del <em>Koselig</em>.</p>
+                </div>
+                <a href="no-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇩🇰</span>
+                    <h2>Danese</h2>
+                    <p>Il segreto della felicità nell'<em>Hygge</em> e l'energia del <em>Morgenfrisk</em>.</p>
+                </div>
+                <a href="da-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇹🇷</span>
+                    <h2>Turco</h2>
+                    <p>Il riflesso dello <em>Yakamoz</em> e la malinconia dello <em>Hüzün</em>.</p>
+                </div>
+                <a href="tr-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇵🇱</span>
+                    <h2>Polacco</h2>
+                    <p>L'ingegno del <em>Kombinować</em> e il sentimento dello <em>Żal</em>.</p>
+                </div>
+                <a href="pl-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇷🇺</span>
+                    <h2>Russo</h2>
+                    <p>L'abisso della <em>Toska</em> e la fiducia nell'<em>Avos</em>.</p>
+                </div>
+                <a href="ru-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+            <div class="article-card">
+                <div>
+                    <span class="flag">🇮🇩</span>
+                    <h2>Indonesiano</h2>
+                    <p>L'armonia del <em>Gotong Royong</em> e il relax del <em>Nongkrong</em>.</p>
+                </div>
+                <a href="id-intraducibili.html" class="btn-read">Esplora &rarr;</a>
+            </div>
+
+        </div>
     </div>
 
     <footer>
-        <p>Inizia il tuo viaggio linguistico:</p>
-        <a href="https://it.babbel.com" target="_blank">Vai a Babbel</a>
-        <a href="https://pinterest.com/tuo-profilo" target="_blank">Seguici su Pinterest</a>
+        <p>Inizia il tuo viaggio linguistico con Babbel:</p>
+       
+<a rel="sponsored" href="https://www.awin1.com/awclick.php?gid=322314&mid=9659&awinaffid=2764918&linkid=2038224&clickref=">Babbel - La prima lezione  gratis!</a>
+
+        <a href="https://it.pinterest.com/Nausicac/" target="_blank">Ispirazioni su Pinterest</a>
+        <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 1.5rem;">&copy; 2026 Culture Hub - 13 Lingue, Infinite Scoperte.</p>
     </footer>
+
 </body>
 </html>
